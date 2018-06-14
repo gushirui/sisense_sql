@@ -11,10 +11,3 @@ select `View_Credit_Alpha`.`date` AS `date`,
 `nic_reporting`.`portal_credit_info_infoma_summary`.`Price` AS `revenue` 
 from `nic_reporting`.`portal_credit_info_infoma_summary` 
 
-union all
-
- select `nic_reporting`.`portal_credit_info_zeta_summary`.`Date` AS `date`,
-'Zeta' AS `partner`,
-'Lead' AS `offer`,
-`nic_reporting`.`portal_credit_info_zeta_summary`.`revenue` AS `revenue` 
-from `nic_reporting`.`portal_credit_info_zeta_summary` order by `date` desc
